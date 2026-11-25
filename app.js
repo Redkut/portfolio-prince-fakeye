@@ -1,57 +1,67 @@
 const translations = {
   fr: {
-    nav_kpis: "Chiffres Clés",
-    nav_skills: "Expertise",
+    nav_kpis: "Résultats",
     nav_projects: "Réalisations",
-    nav_apps: "Apps & Vibe Coding",
     nav_timeline: "Parcours",
+    nav_comp: "Compétences",
+    nav_apps: "Digitalisation",
     nav_contact: "Contact",
     hero_badge: "Ingénieur / Responsable Maintenance Industrielle",
     hero_avail: "Disponibilité : 1 mois",
     hero_title: "Fiabiliser vos installations industrielles & maximiser la disponibilité.",
     hero_sub: "10 ans d'expérience continue chez NOCIBE SA. Expert GMAO Coswin 8.0, certifié Responsable Maintenance Préventive (Uptime SDI), spécialisé en équipements lourds, broyeurs à boulets et centrales électriques.",
     cta_contact: "Me contacter",
-    cta_projects: "Voir mes réalisations",
-    kpi_title: "Indicateurs Clés & Impact",
-    kpi_1: "Années d'expérience chez NOCIBE SA",
-    kpi_2: "Maîtrise avancée GMAO",
-    kpi_3: "Certifié Maintenance Préventive",
-    kpi_4: "Préavis / Disponibilité",
-    skills_title: "Domaines d'Expertise",
-    sk1_t: "Maintenance Préventive & Fiabilité",
-    sk1_d: "Déploiement de plans de maintenance préventive, analyse des défaillances (RCA), suivi des indicateurs MTBF, MTTR et taux de disponibilité.",
-    sk2_t: "GMAO Coswin 8.0",
-    sk2_d: "Administration fonctionnelle, gestion des ordres de travail, gammes opératoires, historiques d'interventions et tableaux de bord de performance.",
-    sk3_t: "Équipements Lourds & Centrale Électrique",
-    sk3_d: "Maintenance mécanique et électrique de broyeurs à boulets, convoyeurs et groupes électrogènes industriels (moteurs diesel Hyundai & Mitsubishi).",
-    sk4_t: "Management & Pièces de Rechange",
-    sk4_d: "Encadrement d'équipes techniques pluridisciplinaires, planification des arrêts d'usine et gestion rigoureuse des stocks de pièces critiques.",
+    cta_cv: "📄 Télécharger mon CV (PDF)",
+    kpi_title: "Résultats & Impact Chiffré",
+    kpi_1_val: "[À COMPLÉTER : % avant → % après]",
+    kpi_1_lbl: "Disponibilité des équipements",
+    kpi_2_val: "[À COMPLÉTER : -X %]",
+    kpi_2_lbl: "Réduction des arrêts non planifiés",
+    kpi_3_val: "[À COMPLÉTER : montant / %]",
+    kpi_3_lbl: "Économies / Budget géré",
+    kpi_4_val: "[À COMPLÉTER : X techniciens]",
+    kpi_4_lbl: "Taille de l'équipe encadrée",
+    kpi_5_val: "[À COMPLÉTER : X jours / résultat]",
+    kpi_5_lbl: "Arrêt technique du broyeur",
     proj_title: "Réalisations Industrielles",
+    lbl_context: "Contexte :",
+    lbl_result: "Résultat :",
+    btn_detail: "Voir le détail →",
     p1_tag: "Projet Lourd",
     p1_t: "Changement des blindages — Broyeur à boulets",
-    p1_d: "Pilotage complet de l'arrêt technique, coordination des équipes et contrôle qualité pour garantir le redémarrage dans les délais.",
+    p1_ctx: "Usure critique des blindages nécessitant un arrêt majeur planifié.",
+    p1_res: "[À COMPLÉTER : durée et résultat de l'arrêt]",
     p2_tag: "Énergie",
     p2_t: "Centrale Électrique (Hyundai & Mitsubishi)",
-    p2_d: "Maintenance préventive et curative des groupes électrogènes lourds assurant la continuité énergétique du site industriel.",
-    p3_tag: "Digitalisation",
+    p2_ctx: "Continuité énergétique d'un site industriel reposant sur des groupes diesel lourds.",
+    p2_res: "[À COMPLÉTER : taux de disponibilité / heures de marche]",
+    p3_tag: "GMAO",
     p3_t: "Optimisation GMAO Coswin 8.0",
-    p3_d: "Structuration des équipements, fiabilisation des données de maintenance et réduction des temps d'arrêt non planifiés.",
-    apps_title: "Mes Apps & Projets Vibe Coding",
-    apps_sub: "Applications mobiles et web conçues sur mon temps libre pour résoudre des besoins concrets du terrain.",
-    app1_d: "Application mobile de gestion de maintenance assistée par ordinateur (GMAO) avec suivi des équipements et interventions.",
-    app2_d: "Plateforme de livraison et de suivi logistique adaptée au marché béninois.",
-    app3_d: "Outil numérique dédié à la gestion et au suivi opérationnel.",
-    app4_d: "Application utilitaire orientée gestion et productivité.",
+    p3_ctx: "Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.",
+    p3_res: "[À COMPLÉTER : réduction des arrêts / MTBF]",
     time_title: "Parcours & Certifications",
-    t1_date: "10 ans d'expérience continue",
-    t1_title: "NOCIBE SA — Maintenance Industrielle",
-    t1_desc: "Gestion de la maintenance préventive et corrective, pilotage d'arrêts techniques majeurs, encadrement d'équipes et suivi GMAO Coswin 8.0.",
-    t2_date: "Certification Professionnelle",
+    t1_date: "NOCIBE SA — [À COMPLÉTER : Année début – Année fin] (10 ans)",
+    t1_title: "Évolution de poste : [À COMPLÉTER : Poste 1 → Poste actuel]",
+    t1_desc: "Période 1 ([À COMPLÉTER : dates]) : [À COMPLÉTER : missions]. Période 2 ([À COMPLÉTER : dates]) : Pilotage maintenance préventive/corrective, arrêts broyeurs, centrale électrique et GMAO Coswin 8.0.",
+    t2_date: "Certification — [À COMPLÉTER : Année]",
     t2_title: "Responsable Maintenance Préventive — Uptime SDI",
-    t2_desc: "Maîtrise des méthodologies avancées de fiabilisation, planification et optimisation des coûts de maintenance.",
-    t3_date: "Formation Académique",
-    t3_title: "Diplômes : MASTÈRE · LICENCE · DT · BAC",
-    t3_desc: "Parcours académique complet sanctionné par le Baccalauréat (BAC), le Diplôme de Technicien (DT), la Licence et le Mastère.",
+    t2_desc: "Fiabilisation, planification et optimisation des coûts de maintenance.",
+    deg_title: "Formation Académique",
+    comp_title: "Compétences Techniques & Managériales",
+    c1_t: "Outils & GMAO",
+    c2_t: "Méthodes de Maintenance",
+    c3_t: "Normes & Sécurité / HSE",
+    c4_t: "Management & Gestion",
+    apps_title: "Digitalisation de la Maintenance & Outils Terrain",
+    apps_sub: "Conception d'outils numériques sur mesure pour résoudre des problématiques concrètes de suivi et d'efficacité opérationnelle.",
+    app_flagship: "Projet Phare · Digitalisation GMAO",
+    app1_d: "Application mobile conçue pour digitaliser le suivi des équipements, les demandes d'intervention et la traçabilité terrain en complément des systèmes GMAO classiques.",
+    btn_github: "Code / Démo GitHub ↗",
+    app_screen_ph: "[À COMPLÉTER : Capture d'écran GMAO-2026-V2]",
+    app2_d: "Résout le suivi des livraisons et la coordination logistique locale en temps réel.",
+    app3_d: "Simplifie le suivi opérationnel et la remontée d'informations terrain.",
+    app4_d: "Automatise des tâches de gestion et améliore la productivité quotidienne.",
+    testi_title: "Recommandations",
     contact_title: "Me Contacter",
     contact_sub: "Disponible sous 1 mois pour un poste de Responsable / Ingénieur Maintenance Industrielle au Bénin ou en Afrique de l'Ouest.",
     ph_name: "Votre nom / Entreprise",
@@ -59,61 +69,72 @@ const translations = {
     ph_msg: "Votre message ou proposition...",
     btn_send: "Envoyer le message",
     footer_rights: "Tous droits réservés.",
-    form_ok: "Merci ! Votre message a bien été préparé."
+    form_ok: "Merci ! Votre message a bien été envoyé.",
+    form_err: "Erreur lors de l'envoi. Veuillez réessayer ou utiliser WhatsApp / Email."
   },
   en: {
-    nav_kpis: "Key Metrics",
-    nav_skills: "Expertise",
+    nav_kpis: "Results",
     nav_projects: "Projects",
-    nav_apps: "Apps & Vibe Coding",
     nav_timeline: "Background",
+    nav_comp: "Skills",
+    nav_apps: "Digitalization",
     nav_contact: "Contact",
     hero_badge: "Industrial Maintenance Engineer / Manager",
     hero_avail: "Availability: 1 month",
     hero_title: "Increasing industrial reliability & maximizing equipment availability.",
     hero_sub: "10 years of continuous experience at NOCIBE SA. Coswin 8.0 CMMS expert, certified Preventive Maintenance Manager (Uptime SDI), specialized in heavy machinery, ball mills and power plants.",
     cta_contact: "Contact me",
-    cta_projects: "View projects",
-    kpi_title: "Key Metrics & Impact",
-    kpi_1: "Years of experience at NOCIBE SA",
-    kpi_2: "Advanced CMMS Mastery",
-    kpi_3: "Preventive Maintenance Certified",
-    kpi_4: "Notice / Availability",
-    skills_title: "Areas of Expertise",
-    sk1_t: "Preventive Maintenance & Reliability",
-    sk1_d: "Preventive maintenance planning, root cause analysis (RCA), MTBF, MTTR and equipment availability tracking.",
-    sk2_t: "Coswin 8.0 CMMS",
-    sk2_d: "Functional administration, work order management, maintenance procedures, intervention history and performance dashboards.",
-    sk3_t: "Heavy Machinery & Power Plant",
-    sk3_d: "Mechanical and electrical maintenance of ball mills, conveyors and heavy-duty diesel generators (Hyundai & Mitsubishi).",
-    sk4_t: "Team Leadership & Spare Parts",
-    sk4_d: "Supervision of multidisciplinary technical teams, plant turnaround planning and critical spare parts inventory management.",
+    cta_cv: "📄 Download Resume (PDF)",
+    kpi_title: "Measurable Results & Impact",
+    kpi_1_val: "[TO COMPLETE: % before → % after]",
+    kpi_1_lbl: "Equipment availability",
+    kpi_2_val: "[TO COMPLETE: -X %]",
+    kpi_2_lbl: "Unplanned downtime reduction",
+    kpi_3_val: "[TO COMPLETE: amount / %]",
+    kpi_3_lbl: "Savings / Managed budget",
+    kpi_4_val: "[TO COMPLETE: X technicians]",
+    kpi_4_lbl: "Team size supervised",
+    kpi_5_val: "[TO COMPLETE: X days / outcome]",
+    kpi_5_lbl: "Ball mill turnaround",
     proj_title: "Industrial Projects",
+    lbl_context: "Context:",
+    lbl_result: "Result:",
+    btn_detail: "View details →",
     p1_tag: "Heavy Project",
     p1_t: "Liner Replacement — Ball Mill",
-    p1_d: "End-to-end turnaround management, team coordination and quality control ensuring on-time plant restart.",
+    p1_ctx: "Critical liner wear requiring a major scheduled plant turnaround.",
+    p1_res: "[TO COMPLETE: turnaround duration and outcome]",
     p2_tag: "Energy",
     p2_t: "Power Plant (Hyundai & Mitsubishi)",
-    p2_d: "Preventive and corrective maintenance of heavy-duty diesel generators ensuring continuous industrial power supply.",
-    p3_tag: "Digitalization",
+    p2_ctx: "Continuous industrial power supply relying on heavy-duty diesel generators.",
+    p2_res: "[TO COMPLETE: availability rate / running hours]",
+    p3_tag: "CMMS",
     p3_t: "Coswin 8.0 CMMS Optimization",
-    p3_d: "Asset structuring, maintenance data reliability and reduction of unplanned downtime.",
-    apps_title: "My Apps & Vibe Coding Projects",
-    apps_sub: "Mobile and web apps built in my free time to solve real-world field needs.",
-    app1_d: "Mobile CMMS application for equipment tracking and maintenance interventions.",
-    app2_d: "Delivery and logistics tracking platform tailored for the Benin market.",
-    app3_d: "Digital tool dedicated to operational management and tracking.",
-    app4_d: "Utility application focused on management and productivity.",
+    p3_ctx: "Structuring preventive plans, work orders and critical spare parts tracking.",
+    p3_res: "[TO COMPLETE: downtime reduction / MTBF]",
     time_title: "Background & Certifications",
-    t1_date: "10 years continuous experience",
-    t1_title: "NOCIBE SA — Industrial Maintenance",
-    t1_desc: "Preventive and corrective maintenance management, major turnaround leadership, team supervision and Coswin 8.0 CMMS.",
-    t2_date: "Professional Certification",
+    t1_date: "NOCIBE SA — [TO COMPLETE: Start Year – End Year] (10 years)",
+    t1_title: "Career progression: [TO COMPLETE: Role 1 → Current Role]",
+    t1_desc: "Period 1 ([TO COMPLETE: dates]): [TO COMPLETE: responsibilities]. Period 2 ([TO COMPLETE: dates]): Preventive/corrective maintenance leadership, mill turnarounds, power plant and Coswin 8.0 CMMS.",
+    t2_date: "Certification — [TO COMPLETE: Year]",
     t2_title: "Preventive Maintenance Manager — Uptime SDI",
-    t2_desc: "Advanced methodologies in reliability engineering, scheduling and maintenance cost optimization.",
-    t3_date: "Academic Background",
-    t3_title: "Degrees: MASTER'S · BACHELOR'S (LICENCE) · DT · BAC",
-    t3_desc: "Complete academic background including Baccalaureate (BAC), Technician Diploma (DT), Bachelor's Degree (Licence) and Master's Degree (Mastère).",
+    t2_desc: "Reliability engineering, scheduling and maintenance cost optimization.",
+    deg_title: "Academic Background",
+    comp_title: "Technical & Management Skills",
+    c1_t: "Tools & CMMS",
+    c2_t: "Maintenance Methods",
+    c3_t: "Standards & HSE",
+    c4_t: "Management",
+    apps_title: "Maintenance Digitalization & Field Tools",
+    apps_sub: "Custom digital tools built to solve concrete field tracking and operational efficiency challenges.",
+    app_flagship: "Flagship Project · CMMS Digitalization",
+    app1_d: "Mobile app designed to digitize equipment tracking, work requests and field traceability alongside traditional CMMS.",
+    btn_github: "Code / Demo GitHub ↗",
+    app_screen_ph: "[TO COMPLETE: GMAO-2026-V2 Screenshot]",
+    app2_d: "Solves real-time local delivery tracking and logistics coordination.",
+    app3_d: "Streamlines operational tracking and field reporting.",
+    app4_d: "Automates management tasks and improves daily productivity.",
+    testi_title: "Recommendations",
     contact_title: "Contact Me",
     contact_sub: "Available within 1 month for an Industrial Maintenance Manager / Engineer position in Benin or West Africa.",
     ph_name: "Your name / Company",
@@ -121,7 +142,53 @@ const translations = {
     ph_msg: "Your message or inquiry...",
     btn_send: "Send message",
     footer_rights: "All rights reserved.",
-    form_ok: "Thank you! Your message is ready."
+    form_ok: "Thank you! Your message has been sent.",
+    form_err: "Error sending message. Please try again or use WhatsApp / Email."
+  }
+};
+
+const projectDetails = {
+  p1: {
+    tag: { fr: "Projet Lourd", en: "Heavy Project" },
+    title: { fr: "Changement des blindages — Broyeur à boulets", en: "Liner Replacement — Ball Mill" },
+    body: {
+      fr: `<p><strong>Contexte :</strong> Usure critique des blindages nécessitant un arrêt majeur planifié.</p>
+           <p><strong>Mon rôle :</strong> [À COMPLÉTER : Chef de projet / Superviseur arrêt]</p>
+           <p><strong>Actions :</strong> Planification des ressources, préparation des pièces de rechange, coordination des équipes mécaniques et contrôle qualité au remontage.</p>
+           <p><strong>Résultat chiffré :</strong> [À COMPLÉTER : durée et résultat de l'arrêt]</p>`,
+      en: `<p><strong>Context:</strong> Critical liner wear requiring a major scheduled turnaround.</p>
+           <p><strong>My role:</strong> [TO COMPLETE: Project Lead / Turnaround Supervisor]</p>
+           <p><strong>Actions:</strong> Resource scheduling, spare parts preparation, mechanical team coordination and quality control.</p>
+           <p><strong>Result:</strong> [TO COMPLETE: turnaround duration and outcome]</p>`
+    }
+  },
+  p2: {
+    tag: { fr: "Énergie", en: "Energy" },
+    title: { fr: "Centrale Électrique (Hyundai & Mitsubishi)", en: "Power Plant (Hyundai & Mitsubishi)" },
+    body: {
+      fr: `<p><strong>Contexte :</strong> Continuité énergétique d'un site industriel reposant sur des groupes diesel lourds.</p>
+           <p><strong>Mon rôle :</strong> [À COMPLÉTER : Responsable maintenance centrale]</p>
+           <p><strong>Actions :</strong> Maintenance préventive systématique, diagnostics moteurs diesel Hyundai & Mitsubishi, gestion des pièces critiques.</p>
+           <p><strong>Résultat chiffré :</strong> [À COMPLÉTER : taux de disponibilité / heures de marche]</p>`,
+      en: `<p><strong>Context:</strong> Continuous industrial power supply relying on heavy-duty diesel generators.</p>
+           <p><strong>My role:</strong> [TO COMPLETE: Power Plant Maintenance Lead]</p>
+           <p><strong>Actions:</strong> Systematic preventive maintenance, Hyundai & Mitsubishi diesel diagnostics, critical spare parts management.</p>
+           <p><strong>Result:</strong> [TO COMPLETE: availability rate / running hours]</p>`
+    }
+  },
+  p3: {
+    tag: { fr: "GMAO", en: "CMMS" },
+    title: { fr: "Optimisation GMAO Coswin 8.0", en: "Coswin 8.0 CMMS Optimization" },
+    body: {
+      fr: `<p><strong>Contexte :</strong> Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.</p>
+           <p><strong>Mon rôle :</strong> [À COMPLÉTER : Référent / Administrateur fonctionnel Coswin 8.0]</p>
+           <p><strong>Actions :</strong> Création des gammes opératoires, suivi des KPIs (MTBF, MTTR), fiabilisation des historiques.</p>
+           <p><strong>Résultat chiffré :</strong> [À COMPLÉTER : réduction des arrêts / MTBF]</p>`,
+      en: `<p><strong>Context:</strong> Structuring preventive plans, work orders and critical spare parts tracking.</p>
+           <p><strong>My role:</strong> [TO COMPLETE: Coswin 8.0 Functional Lead]</p>
+           <p><strong>Actions:</strong> Standard operating procedures, KPI tracking (MTBF, MTTR), maintenance history reliability.</p>
+           <p><strong>Result:</strong> [TO COMPLETE: downtime reduction / MTBF]</p>`
+    }
   }
 };
 
@@ -143,16 +210,12 @@ function applyLanguage(lang) {
 
   document.querySelectorAll('[data-i18n]').forEach((el) => {
     const key = el.getAttribute('data-i18n');
-    if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
+    if (translations[lang][key]) el.textContent = translations[lang][key];
   });
 
   document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
     const key = el.getAttribute('data-i18n-placeholder');
-    if (translations[lang][key]) {
-      el.setAttribute('placeholder', translations[lang][key]);
-    }
+    if (translations[lang][key]) el.setAttribute('placeholder', translations[lang][key]);
   });
 }
 
@@ -163,23 +226,54 @@ function applyTheme(theme) {
   themeBtn.textContent = theme === 'dark' ? '☀️ Clair' : '🌙 Sombre';
 }
 
-langBtn.addEventListener('click', () => {
-  applyLanguage(currentLang === 'fr' ? 'en' : 'fr');
-});
+function openProjectModal(id) {
+  const data = projectDetails[id];
+  if (!data) return;
+  document.getElementById('modalTag').textContent = data.tag[currentLang];
+  document.getElementById('modalTitle').textContent = data.title[currentLang];
+  document.getElementById('modalBody').innerHTML = data.body[currentLang];
+  document.getElementById('projectModal').hidden = false;
+}
 
-themeBtn.addEventListener('click', () => {
-  applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
-});
+function closeProjectModal() {
+  document.getElementById('projectModal').hidden = true;
+}
 
-burgerBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
+window.openProjectModal = openProjectModal;
+window.closeProjectModal = closeProjectModal;
 
-contactForm.addEventListener('submit', (e) => {
+langBtn.addEventListener('click', () => applyLanguage(currentLang === 'fr' ? 'en' : 'fr'));
+themeBtn.addEventListener('click', () => applyTheme(currentTheme === 'dark' ? 'light' : 'dark'));
+burgerBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  formFeedback.textContent = translations[currentLang].form_ok;
-  contactForm.reset();
+  const formData = new FormData(contactForm);
+  if (formData.get('access_key') === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+    formFeedback.textContent = translations[currentLang].form_ok + " (Mode démo : ajoutez votre clé Web3Forms)";
+    contactForm.reset();
+    return;
+  }
+  try {
+    const res = await fetch(contactForm.action, { method: 'POST', body: formData });
+    if (res.ok) {
+      formFeedback.textContent = translations[currentLang].form_ok;
+      contactForm.reset();
+    } else {
+      formFeedback.textContent = translations[currentLang].form_err;
+    }
+  } catch {
+    formFeedback.textContent = translations[currentLang].form_err;
+  }
 });
+
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 document.getElementById('year').textContent = new Date().getFullYear();
 applyLanguage(currentLang);

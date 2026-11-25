@@ -3,32 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio de Prince Habib FAKEYE — Ingénieur / Responsable Maintenance Industrielle, 10 ans NOCIBE SA, Expert GMAO Coswin 8.0, Certifié Uptime SDI." />
-  <title>Prince Habib FAKEYE — Portfolio Maintenance Industrielle</title>
+  <title>Prince Habib FAKEYE — Ingénieur / Responsable Maintenance Industrielle</title>
+  <meta name="description" content="Portfolio de Prince Habib FAKEYE, Ingénieur / Responsable Maintenance Industrielle au Bénin. 10 ans chez NOCIBE SA, Expert GMAO Coswin 8.0, Certifié Uptime SDI. Disponible sous 1 mois." />
+
+  <!-- Open Graph & Twitter Card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Prince Habib FAKEYE — Ingénieur / Responsable Maintenance Industrielle" />
+  <meta property="og:description" content="10 ans d'expérience chez NOCIBE SA, Expert GMAO Coswin 8.0, Certifié Uptime SDI. Disponible sous 1 mois au Bénin et en Afrique de l'Ouest." />
+  <meta property="og:image" content="https://redkut.github.io/portfolio-prince-fakeye/profile.jpg" />
+  <meta property="og:url" content="https://redkut.github.io/portfolio-prince-fakeye/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prince Habib FAKEYE — Maintenance Industrielle" />
+  <meta name="twitter:description" content="Ingénieur / Responsable Maintenance Industrielle — 10 ans NOCIBE SA, GMAO Coswin 8.0, Uptime SDI." />
+  <meta name="twitter:image" content="https://redkut.github.io/portfolio-prince-fakeye/profile.jpg" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070b14'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='28' fill='%23f97316'%3EPF%3C/text%3E%3C/svg%3E" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prince Habib FAKEYE",
+    "jobTitle": "Ingénieur / Responsable Maintenance Industrielle",
+    "url": "https://redkut.github.io/portfolio-prince-fakeye/",
+    "sameAs": ["https://www.linkedin.com/in/prince-fakeye-2a229911a"],
+    "email": "fakhabib@live.fr",
+    "telephone": "+2290166114464",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BJ"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="navbar">
     <div class="container nav-inner">
       <a href="#top" class="brand">PRINCE HABIB <span>FAKEYE</span></a>
-      <nav class="nav-links" id="navLinks">
-        <a href="#kpis" data-i18n="nav_kpis">Chiffres Clés</a>
-        <a href="#skills" data-i18n="nav_skills">Expertise</a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+        <a href="#kpis" data-i18n="nav_kpis">Résultats</a>
         <a href="#projects" data-i18n="nav_projects">Réalisations</a>
-        <a href="#apps" data-i18n="nav_apps">Apps & Vibe Coding</a>
         <a href="#timeline" data-i18n="nav_timeline">Parcours</a>
+        <a href="#competences" data-i18n="nav_comp">Compétences</a>
+        <a href="#apps" data-i18n="nav_apps">Digitalisation</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
       </nav>
       <div class="nav-controls">
         <button class="pill" id="langBtn" aria-label="Changer de langue">EN</button>
         <button class="pill" id="themeBtn" aria-label="Changer de thème">☀️ Clair</button>
-        <button class="burger" id="burgerBtn" aria-label="Menu">☰</button>
+        <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu">☰</button>
       </div>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero container">
+    <!-- HERO -->
+    <section class="hero container reveal">
       <div class="hero-layout">
         <div class="hero-text">
           <div class="hero-badges">
@@ -41,152 +75,241 @@
           </p>
           <div class="cta-group">
             <a href="#contact" class="btn btn-primary" data-i18n="cta_contact">Me contacter</a>
-            <a href="#projects" class="btn btn-secondary" data-i18n="cta_projects">Voir mes réalisations</a>
+            <a href="cv-prince-habib-fakeye.pdf" download class="btn btn-secondary" data-i18n="cta_cv">📄 Télécharger mon CV (PDF)</a>
             <a href="https://www.linkedin.com/in/prince-fakeye-2a229911a" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn ↗</a>
           </div>
         </div>
         <div class="hero-photo-wrap">
-          <img src="profile.jpg" alt="Prince Habib FAKEYE" class="hero-photo" />
+          <img src="profile.jpg" alt="Portrait professionnel de Prince Habib FAKEYE, Ingénieur Maintenance Industrielle" class="hero-photo" />
         </div>
       </div>
     </section>
 
-    <section id="kpis" class="section container">
-      <h2 data-i18n="kpi_title">Indicateurs Clés & Impact</h2>
+    <!-- 1. KPI & RÉSULTATS CHIFFRÉS -->
+    <section id="kpis" class="section container reveal">
+      <h2 data-i18n="kpi_title">Résultats & Impact Chiffré</h2>
       <div class="kpi-grid">
         <div class="kpi-card">
-          <div class="kpi-val">10+</div>
-          <div class="kpi-lbl" data-i18n="kpi_1">Années d'expérience chez NOCIBE SA</div>
+          <div class="kpi-val placeholder-val" data-i18n="kpi_1_val">[À COMPLÉTER : % avant → % après]</div>
+          <div class="kpi-lbl" data-i18n="kpi_1_lbl">Disponibilité des équipements</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-val">Coswin 8.0</div>
-          <div class="kpi-lbl" data-i18n="kpi_2">Maîtrise avancée GMAO</div>
+          <div class="kpi-val placeholder-val" data-i18n="kpi_2_val">[À COMPLÉTER : -X %]</div>
+          <div class="kpi-lbl" data-i18n="kpi_2_lbl">Réduction des arrêts non planifiés</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-val">Uptime SDI</div>
-          <div class="kpi-lbl" data-i18n="kpi_3">Certifié Maintenance Préventive</div>
+          <div class="kpi-val placeholder-val" data-i18n="kpi_3_val">[À COMPLÉTER : montant / %]</div>
+          <div class="kpi-lbl" data-i18n="kpi_3_lbl">Économies / Budget géré</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-val">1 mois</div>
-          <div class="kpi-lbl" data-i18n="kpi_4">Préavis / Disponibilité</div>
+          <div class="kpi-val placeholder-val" data-i18n="kpi_4_val">[À COMPLÉTER : X techniciens]</div>
+          <div class="kpi-lbl" data-i18n="kpi_4_lbl">Taille de l'équipe encadrée</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-val placeholder-val" data-i18n="kpi_5_val">[À COMPLÉTER : X jours / résultat]</div>
+          <div class="kpi-lbl" data-i18n="kpi_5_lbl">Arrêt technique du broyeur</div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section container">
-      <h2 data-i18n="skills_title">Domaines d'Expertise</h2>
-      <div class="cards-grid">
-        <article class="card">
-          <h3 data-i18n="sk1_t">Maintenance Préventive & Fiabilité</h3>
-          <p data-i18n="sk1_d">Déploiement de plans de maintenance préventive, analyse des défaillances (RCA), suivi des indicateurs MTBF, MTTR et taux de disponibilité.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="sk2_t">GMAO Coswin 8.0</h3>
-          <p data-i18n="sk2_d">Administration fonctionnelle, gestion des ordres de travail, gammes opératoires, historiques d'interventions et tableaux de bord de performance.</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="sk3_t">Équipements Lourds & Centrale Électrique</h3>
-          <p data-i18n="sk3_d">Maintenance mécanique et électrique de broyeurs à boulets, convoyeurs et groupes électrogènes industriels (moteurs diesel Hyundai & Mitsubishi).</p>
-        </article>
-        <article class="card">
-          <h3 data-i18n="sk4_t">Management & Pièces de Rechange</h3>
-          <p data-i18n="sk4_d">Encadrement d'équipes techniques pluridisciplinaires, planification des arrêts d'usine et gestion rigoureuse des stocks de pièces critiques.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section container">
+    <!-- 2. RÉALISATIONS (Contexte / Rôle / Actions / Résultat + Modale) -->
+    <section id="projects" class="section container reveal">
       <h2 data-i18n="proj_title">Réalisations Industrielles</h2>
       <div class="cards-grid">
         <article class="card project-card">
           <span class="tag" data-i18n="p1_tag">Projet Lourd</span>
           <h3 data-i18n="p1_t">Changement des blindages — Broyeur à boulets</h3>
-          <p data-i18n="p1_d">Pilotage complet de l'arrêt technique, coordination des équipes et contrôle qualité pour garantir le redémarrage dans les délais.</p>
+          <p><strong data-i18n="lbl_context">Contexte :</strong> <span data-i18n="p1_ctx">Usure critique des blindages nécessitant un arrêt majeur planifié.</span></p>
+          <p><strong data-i18n="lbl_result">Résultat :</strong> <span class="placeholder-inline" data-i18n="p1_res">[À COMPLÉTER : durée et résultat de l'arrêt]</span></p>
+          <button class="btn-link" onclick="openProjectModal('p1')" data-i18n="btn_detail">Voir le détail →</button>
         </article>
+
         <article class="card project-card">
           <span class="tag" data-i18n="p2_tag">Énergie</span>
           <h3 data-i18n="p2_t">Centrale Électrique (Hyundai & Mitsubishi)</h3>
-          <p data-i18n="p2_d">Maintenance préventive et curative des groupes électrogènes lourds assurant la continuité énergétique du site industriel.</p>
+          <p><strong data-i18n="lbl_context">Contexte :</strong> <span data-i18n="p2_ctx">Continuité énergétique d'un site industriel reposant sur des groupes diesel lourds.</span></p>
+          <p><strong data-i18n="lbl_result">Résultat :</strong> <span class="placeholder-inline" data-i18n="p2_res">[À COMPLÉTER : taux de disponibilité / heures de marche]</span></p>
+          <button class="btn-link" onclick="openProjectModal('p2')" data-i18n="btn_detail">Voir le détail →</button>
         </article>
+
         <article class="card project-card">
-          <span class="tag" data-i18n="p3_tag">Digitalisation</span>
+          <span class="tag" data-i18n="p3_tag">GMAO</span>
           <h3 data-i18n="p3_t">Optimisation GMAO Coswin 8.0</h3>
-          <p data-i18n="p3_d">Structuration des équipements, fiabilisation des données de maintenance et réduction des temps d'arrêt non planifiés.</p>
+          <p><strong data-i18n="lbl_context">Contexte :</strong> <span data-i18n="p3_ctx">Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.</span></p>
+          <p><strong data-i18n="lbl_result">Résultat :</strong> <span class="placeholder-inline" data-i18n="p3_res">[À COMPLÉTER : réduction des arrêts / MTBF]</span></p>
+          <button class="btn-link" onclick="openProjectModal('p3')" data-i18n="btn_detail">Voir le détail →</button>
         </article>
       </div>
     </section>
 
-    <section id="apps" class="section container">
-      <h2 data-i18n="apps_title">Mes Apps & Projets Vibe Coding</h2>
-      <p class="subtitle" data-i18n="apps_sub">Applications mobiles et web conçues sur mon temps libre pour résoudre des besoins concrets du terrain.</p>
-      <div class="cards-grid">
-        <article class="card">
-          <span class="tag">Android / Kotlin</span>
-          <h3>GMAO-2026-V2</h3>
-          <p data-i18n="app1_d">Application mobile de gestion de maintenance assistée par ordinateur (GMAO) avec suivi des équipements et interventions.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Mobile / Logistique</span>
-          <h3>Deliv-Benin</h3>
-          <p data-i18n="app2_d">Plateforme de livraison et de suivi logistique adaptée au marché béninois.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Application</span>
-          <h3>Verrap-V2</h3>
-          <p data-i18n="app3_d">Outil numérique dédié à la gestion et au suivi opérationnel.</p>
-        </article>
-        <article class="card">
-          <span class="tag">Outil Métier</span>
-          <h3>LOGICOM-WM-ME03S</h3>
-          <p data-i18n="app4_d">Application utilitaire orientée gestion et productivité.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="timeline" class="section container">
+    <!-- 3. PARCOURS DÉTAILLÉ & DIPLÔMES -->
+    <section id="timeline" class="section container reveal">
       <h2 data-i18n="time_title">Parcours & Certifications</h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date" data-i18n="t1_date">10 ans d'expérience continue</span>
-            <h3 data-i18n="t1_title">NOCIBE SA — Maintenance Industrielle</h3>
-            <p data-i18n="t1_desc">Gestion de la maintenance préventive et corrective, pilotage d'arrêts techniques majeurs, encadrement d'équipes et suivi GMAO Coswin 8.0.</p>
+            <span class="timeline-date" data-i18n="t1_date">NOCIBE SA — [À COMPLÉTER : Année début – Année fin] (10 ans)</span>
+            <h3 data-i18n="t1_title">Évolution de poste : [À COMPLÉTER : Poste 1 → Poste actuel]</h3>
+            <p data-i18n="t1_desc">Période 1 ([À COMPLÉTER : dates]) : [À COMPLÉTER : missions]. Période 2 ([À COMPLÉTER : dates]) : Pilotage maintenance préventive/corrective, arrêts broyeurs, centrale électrique et GMAO Coswin 8.0.</p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date" data-i18n="t2_date">Certification Professionnelle</span>
+            <span class="timeline-date" data-i18n="t2_date">Certification — [À COMPLÉTER : Année]</span>
             <h3 data-i18n="t2_title">Responsable Maintenance Préventive — Uptime SDI</h3>
-            <p data-i18n="t2_desc">Maîtrise des méthodologies avancées de fiabilisation, planification et optimisation des coûts de maintenance.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date" data-i18n="t3_date">Formation Académique</span>
-            <h3 data-i18n="t3_title">Diplômes : MASTÈRE · LICENCE · DT · BAC</h3>
-            <p data-i18n="t3_desc">Parcours académique complet sanctionné par le Baccalauréat (BAC), le Diplôme de Technicien (DT), la Licence et le Mastère.</p>
+            <p data-i18n="t2_desc">Fiabilisation, planification et optimisation des coûts de maintenance. <span class="placeholder-inline">[À COMPLÉTER : Lien ou ID de vérification]</span></p>
           </div>
         </div>
       </div>
+
+      <h3 class="sub-heading" data-i18n="deg_title">Formation Académique</h3>
+      <div class="cards-grid degrees-grid">
+        <article class="card">
+          <span class="tag">MASTÈRE</span>
+          <h3 data-i18n="deg_m_t">[À COMPLÉTER : Intitulé exact du Mastère]</h3>
+          <p data-i18n="deg_m_d">[À COMPLÉTER : Spécialité · Établissement · Année]</p>
+        </article>
+        <article class="card">
+          <span class="tag">LICENCE</span>
+          <h3 data-i18n="deg_l_t">[À COMPLÉTER : Intitulé exact de la Licence]</h3>
+          <p data-i18n="deg_l_d">[À COMPLÉTER : Spécialité · Établissement · Année]</p>
+        </article>
+        <article class="card">
+          <span class="tag">DT</span>
+          <h3 data-i18n="deg_dt_t">[À COMPLÉTER : Intitulé exact du DT]</h3>
+          <p data-i18n="deg_dt_d">[À COMPLÉTER : Spécialité · Établissement · Année]</p>
+        </article>
+        <article class="card">
+          <span class="tag">BAC</span>
+          <h3 data-i18n="deg_b_t">[À COMPLÉTER : Série du Baccalauréat]</h3>
+          <p data-i18n="deg_b_d">[À COMPLÉTER : Établissement · Année]</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="section container">
+    <!-- 4. COMPÉTENCES -->
+    <section id="competences" class="section container reveal">
+      <h2 data-i18n="comp_title">Compétences Techniques & Managériales</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3 data-i18n="c1_t">Outils & GMAO</h3>
+          <div class="badges-wrap">
+            <span class="skill-badge">Coswin 8.0</span>
+            <span class="skill-badge placeholder-inline">[À COMPLÉTER : autres outils]</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3 data-i18n="c2_t">Méthodes de Maintenance</h3>
+          <div class="badges-wrap">
+            <span class="skill-badge">Maintenance Préventive</span>
+            <span class="skill-badge">Maintenance Curative</span>
+            <span class="skill-badge">RCA / Analyse de pannes</span>
+            <span class="skill-badge">Planification d'arrêts</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3 data-i18n="c3_t">Normes & Sécurité / HSE</h3>
+          <div class="badges-wrap">
+            <span class="skill-badge placeholder-inline">[À COMPLÉTER : normes ISO / HSE validées]</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3 data-i18n="c4_t">Management & Gestion</h3>
+          <div class="badges-wrap">
+            <span class="skill-badge">Encadrement d'équipes</span>
+            <span class="skill-badge">Gestion pièces de rechange</span>
+            <span class="skill-badge">Suivi KPIs (MTBF / MTTR)</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. DIGITALISATION DE LA MAINTENANCE (Apps) -->
+    <section id="apps" class="section container reveal">
+      <h2 data-i18n="apps_title">Digitalisation de la Maintenance & Outils Terrain</h2>
+      <p class="subtitle" data-i18n="apps_sub">Conception d'outils numériques sur mesure pour résoudre des problématiques concrètes de suivi et d'efficacité opérationnelle.</p>
+
+      <!-- Projet Phare -->
+      <article class="card featured-app">
+        <div class="featured-app-content">
+          <span class="tag" data-i18n="app_flagship">Projet Phare · Digitalisation GMAO</span>
+          <h3>GMAO-2026-V2 (Android / Kotlin)</h3>
+          <p data-i18n="app1_d">Application mobile conçue pour digitaliser le suivi des équipements, les demandes d'intervention et la traçabilité terrain en complément des systèmes GMAO classiques.</p>
+          <div class="badges-wrap" style="margin: 1rem 0;">
+            <span class="skill-badge">Kotlin</span>
+            <span class="skill-badge">Jetpack Compose</span>
+            <span class="skill-badge">Firebase</span>
+          </div>
+          <div class="cta-group">
+            <a href="https://github.com/Redkut" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="btn_github">Code / Démo GitHub ↗</a>
+          </div>
+        </div>
+        <div class="featured-app-media">
+          <div class="media-placeholder" data-i18n="app_screen_ph">[À COMPLÉTER : Capture d'écran GMAO-2026-V2]</div>
+        </div>
+      </article>
+
+      <!-- 3 autres outils compacts -->
+      <div class="cards-grid" style="margin-top: 1.5rem;">
+        <article class="card">
+          <span class="tag">Logistique</span>
+          <h3>Deliv-Benin</h3>
+          <p data-i18n="app2_d">Résout le suivi des livraisons et la coordination logistique locale en temps réel.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Opérations</span>
+          <h3>Verrap-V2</h3>
+          <p data-i18n="app3_d">Simplifie le suivi opérationnel et la remontée d'informations terrain.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Productivité</span>
+          <h3>LOGICOM-WM-ME03S</h3>
+          <p data-i18n="app4_d">Automatise des tâches de gestion et améliore la productivité quotidienne.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. RECOMMANDATIONS / TÉMOIGNAGES -->
+    <section id="testimonials" class="section container reveal">
+      <h2 data-i18n="testi_title">Recommandations</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <p class="quote" data-i18n="testi_1">« [À COMPLÉTER : Témoignage d'un directeur technique ou responsable d'usine] »</p>
+          <p class="quote-author placeholder-inline">[À COMPLÉTER : Nom, Poste, Entreprise]</p>
+        </article>
+        <article class="card">
+          <p class="quote" data-i18n="testi_2">« [À COMPLÉTER : Témoignage d'un collègue ou chef de projet] »</p>
+          <p class="quote-author placeholder-inline">[À COMPLÉTER : Nom, Poste, Entreprise]</p>
+        </article>
+        <article class="card">
+          <p class="quote" data-i18n="testi_3">« [À COMPLÉTER : Témoignage d'un partenaire ou fournisseur] »</p>
+          <p class="quote-author placeholder-inline">[À COMPLÉTER : Nom, Poste, Entreprise]</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT & CONVERSION -->
+    <section id="contact" class="section container reveal">
       <h2 data-i18n="contact_title">Me Contacter</h2>
       <p class="subtitle" data-i18n="contact_sub">Disponible sous 1 mois pour un poste de Responsable / Ingénieur Maintenance Industrielle au Bénin ou en Afrique de l'Ouest.</p>
       <div class="hero-badges" style="margin-bottom: 1.5rem;">
         <a href="mailto:fakhabib@live.fr" class="badge" style="text-decoration:none;">✉️ fakhabib@live.fr</a>
+        <a href="https://wa.me/2290166114464" target="_blank" rel="noopener noreferrer" class="badge" style="text-decoration:none;">💬 WhatsApp (+229 01 66 11 44 64)</a>
         <a href="https://www.linkedin.com/in/prince-fakeye-2a229911a" target="_blank" rel="noopener noreferrer" class="badge" style="text-decoration:none;">🔗 LinkedIn</a>
-        <span class="badge badge-outline">📞 +229 01 66 11 44 64</span>
+        <a href="cv-prince-habib-fakeye.pdf" download class="badge badge-outline" style="text-decoration:none;" data-i18n="cta_cv">📄 Télécharger mon CV (PDF)</a>
       </div>
-      <form id="contactForm" class="contact-form">
+
+      <!-- Formulaire connecté à Web3Forms (remplacer YOUR_WEB3FORMS_ACCESS_KEY) -->
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="Nouveau contact depuis le Portfolio — Prince Habib FAKEYE" />
         <div class="form-row">
-          <input type="text" id="nameInput" required placeholder="Votre nom / Entreprise" data-i18n-placeholder="ph_name" />
-          <input type="email" id="emailInput" required placeholder="Votre email" data-i18n-placeholder="ph_email" />
+          <input type="text" name="name" id="nameInput" required placeholder="Votre nom / Entreprise" data-i18n-placeholder="ph_name" />
+          <input type="email" name="email" id="emailInput" required placeholder="Votre email" data-i18n-placeholder="ph_email" />
         </div>
-        <textarea id="msgInput" rows="4" required placeholder="Votre message ou proposition..." data-i18n-placeholder="ph_msg"></textarea>
+        <textarea name="message" id="msgInput" rows="4" required placeholder="Votre message ou proposition..." data-i18n-placeholder="ph_msg"></textarea>
         <button type="submit" class="btn btn-primary" data-i18n="btn_send">Envoyer le message</button>
         <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
       </form>
@@ -198,6 +321,21 @@
       <p>© <span id="year"></span> Prince Habib FAKEYE — <span data-i18n="footer_rights">Tous droits réservés.</span> · <a href="https://www.linkedin.com/in/prince-fakeye-2a229911a" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none;">LinkedIn</a></p>
     </div>
   </footer>
+
+  <!-- Modale Détail Réalisation -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeProjectModal()" aria-label="Fermer">✕</button>
+      <span id="modalTag" class="tag"></span>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody" class="modal-body"></div>
+      <div class="modal-photos">
+        <div class="media-placeholder">[À COMPLÉTER : Photo Avant]</div>
+        <div class="media-placeholder">[À COMPLÉTER : Photo Pendant / Après]</div>
+      </div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
