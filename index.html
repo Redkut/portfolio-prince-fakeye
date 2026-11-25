@@ -379,6 +379,16 @@
     </div>
   </div>
 
+  <!-- Lightbox Image Agrandie -->
+  <div id="imageLightbox" class="modal" role="dialog" aria-modal="true" hidden>
+    <div class="modal-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-dialog">
+      <button class="modal-close" onclick="closeLightbox()" aria-label="Fermer">✕</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>

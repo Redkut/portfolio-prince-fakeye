@@ -266,6 +266,34 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
+// Lightbox pour agrandir les images au clic
+function openLightbox(src, alt) {
+  const lb = document.getElementById('imageLightbox');
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightboxImg').alt = alt || '';
+  document.getElementById('lightboxCaption').textContent = alt || '';
+  lb.hidden = false;
+}
+
+function closeLightbox() {
+  document.getElementById('imageLightbox').hidden = true;
+}
+
+window.openLightbox = openLightbox;
+window.closeLightbox = closeLightbox;
+
+document.querySelectorAll('main img, .modal-photos img').forEach((img) => {
+  img.classList.add('zoomable-img');
+  img.addEventListener('click', () => openLightbox(img.src, img.alt));
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+    closeProjectModal();
+  }
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
 applyLanguage(currentLang);
 applyTheme(currentTheme);
