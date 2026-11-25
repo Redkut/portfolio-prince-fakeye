@@ -170,8 +170,41 @@ h1, h2, h3, .brand {
 
 /* Hero */
 .hero {
-  padding: 5.5rem 1.5rem 4.5rem;
+  padding: 5rem 1.5rem 4.5rem;
   border-bottom: 1px solid var(--border);
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo {
+  width: 280px;
+  height: 340px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
+  border: 2px solid rgba(249, 115, 22, 0.45);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 35px var(--accent-glow);
+}
+
+@media (max-width: 860px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .hero-photo {
+    width: 220px;
+    height: 270px;
+  }
 }
 
 .hero-badges {
