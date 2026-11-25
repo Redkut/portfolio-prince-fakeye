@@ -40,10 +40,10 @@ const translations = {
     p3_ctx: "Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.",
     p3_res: "100 % des plans préventifs structurés & -15 % d'arrêts non planifiés.",
     time_title: "Parcours & Certifications",
-    t1_date: "NOCIBE SA — [À COMPLÉTER : Année début – Année fin] (10 ans)",
-    t1_title: "Évolution de poste : [À COMPLÉTER : Poste 1 → Poste actuel]",
-    t1_desc: "Période 1 ([À COMPLÉTER : dates]) : [À COMPLÉTER : missions]. Période 2 ([À COMPLÉTER : dates]) : Pilotage maintenance préventive/corrective, arrêts broyeurs, centrale électrique et GMAO Coswin 8.0.",
-    t2_date: "Certification — [À COMPLÉTER : Année]",
+    t1_date: "Août 2022 – Aujourd'hui · NOCIBE SA (Massè-Bénin)",
+    t1_title: "Chef service maintenance préventive usine & centrale électrique 30 MW (6000 V)",
+    t1_desc: "Direction de la maintenance préventive/curative (usine & moteurs Hyundai/Mitsubishi), fiabilité RAMS/RCM, Lean/TPM, GMAO Coswin 8.0 et pilotage budgétaire.",
+    t2_date: "Certification — 2023",
     t2_title: "Responsable Maintenance Préventive — Uptime SDI",
     t2_desc: "Fiabilisation, planification et optimisation des coûts de maintenance.",
     deg_title: "Formation Académique",
@@ -113,10 +113,10 @@ const translations = {
     p3_ctx: "Structuring preventive plans, work orders and critical spare parts tracking.",
     p3_res: "100% of preventive plans structured & -15% unplanned downtime.",
     time_title: "Background & Certifications",
-    t1_date: "NOCIBE SA — [TO COMPLETE: Start Year – End Year] (10 years)",
-    t1_title: "Career progression: [TO COMPLETE: Role 1 → Current Role]",
-    t1_desc: "Period 1 ([TO COMPLETE: dates]): [TO COMPLETE: responsibilities]. Period 2 ([TO COMPLETE: dates]): Preventive/corrective maintenance leadership, mill turnarounds, power plant and Coswin 8.0 CMMS.",
-    t2_date: "Certification — [TO COMPLETE: Year]",
+    t1_date: "Aug 2022 – Present · NOCIBE SA (Massè-Benin)",
+    t1_title: "Preventive Maintenance Manager — Plant & 30 MW Power Plant (6000 V)",
+    t1_desc: "Preventive/corrective maintenance leadership (plant & Hyundai/Mitsubishi engines), RAMS/RCM reliability, Lean/TPM, Coswin 8.0 CMMS and budget management.",
+    t2_date: "Certification — 2023",
     t2_title: "Preventive Maintenance Manager — Uptime SDI",
     t2_desc: "Reliability engineering, scheduling and maintenance cost optimization.",
     deg_title: "Academic Background",
@@ -152,42 +152,42 @@ const projectDetails = {
     tag: { fr: "Projet Lourd", en: "Heavy Project" },
     title: { fr: "Changement des blindages — Broyeur à boulets", en: "Liner Replacement — Ball Mill" },
     body: {
-      fr: `<p><strong>Contexte :</strong> Usure critique des blindages nécessitant un arrêt majeur planifié.</p>
-           <p><strong>Mon rôle :</strong> [À COMPLÉTER : Chef de projet / Superviseur arrêt]</p>
-           <p><strong>Actions :</strong> Planification des ressources, préparation des pièces de rechange, coordination des équipes mécaniques et contrôle qualité au remontage.</p>
-           <p><strong>Résultat chiffré :</strong> [À COMPLÉTER : durée et résultat de l'arrêt]</p>`,
-      en: `<p><strong>Context:</strong> Critical liner wear requiring a major scheduled turnaround.</p>
-           <p><strong>My role:</strong> [TO COMPLETE: Project Lead / Turnaround Supervisor]</p>
-           <p><strong>Actions:</strong> Resource scheduling, spare parts preparation, mechanical team coordination and quality control.</p>
-           <p><strong>Result:</strong> [TO COMPLETE: turnaround duration and outcome]</p>`
+      fr: `<p><strong>Contexte :</strong> Usure critique des blindages du broyeur à boulets horizontal « Flender » (Atelier Charbon, NOCIBE — Avril 2024).</p>
+           <p><strong>Mon rôle :</strong> Chef service maintenance préventive & superviseur de l'arrêt technique.</p>
+           <p><strong>Actions :</strong> Planification des ressources, préparation des pièces de rechange, coordination des équipes mécaniques (12–20 techniciens) et contrôle qualité au remontage.</p>
+           <p><strong>Résultat chiffré :</strong> Remplacement complet réalisé en 12 à 15 jours.</p>`,
+      en: `<p><strong>Context:</strong> Critical liner wear on the « Flender » horizontal ball mill (Coal Workshop, NOCIBE — April 2024).</p>
+           <p><strong>My role:</strong> Preventive Maintenance Manager & turnaround supervisor.</p>
+           <p><strong>Actions:</strong> Resource scheduling, spare parts preparation, mechanical team coordination (12–20 technicians) and quality control.</p>
+           <p><strong>Result:</strong> Full replacement completed in 12 to 15 days.</p>`
     }
   },
   p2: {
     tag: { fr: "Énergie", en: "Energy" },
     title: { fr: "Centrale Électrique (Hyundai & Mitsubishi)", en: "Power Plant (Hyundai & Mitsubishi)" },
     body: {
-      fr: `<p><strong>Contexte :</strong> Continuité énergétique d'un site industriel reposant sur des groupes diesel lourds.</p>
-           <p><strong>Mon rôle :</strong> [À COMPLÉTER : Responsable maintenance centrale]</p>
-           <p><strong>Actions :</strong> Maintenance préventive systématique, diagnostics moteurs diesel Hyundai & Mitsubishi, gestion des pièces critiques.</p>
-           <p><strong>Résultat chiffré :</strong> [À COMPLÉTER : taux de disponibilité / heures de marche]</p>`,
-      en: `<p><strong>Context:</strong> Continuous industrial power supply relying on heavy-duty diesel generators.</p>
-           <p><strong>My role:</strong> [TO COMPLETE: Power Plant Maintenance Lead]</p>
-           <p><strong>Actions:</strong> Systematic preventive maintenance, Hyundai & Mitsubishi diesel diagnostics, critical spare parts management.</p>
-           <p><strong>Result:</strong> [TO COMPLETE: availability rate / running hours]</p>`
+      fr: `<p><strong>Contexte :</strong> Continuité énergétique de l'usine reposant sur une centrale thermique de 30 MW (6000 V) équipée de groupes diesel Hyundai HiMSEN H32/40V et Mitsubishi.</p>
+           <p><strong>Mon rôle :</strong> Chef service maintenance préventive usine et centrale électrique 30 MW.</p>
+           <p><strong>Actions :</strong> Élaboration et mise en œuvre de la base de maintenance préventive, diagnostics moteurs lourds, gestion des pièces critiques et budget annuel.</p>
+           <p><strong>Résultat chiffré :</strong> 26 MW disponibles en permanence sur 30 MW installés sur l'année (hors incidents) · 86 051 heures de marche cumulées.</p>`,
+      en: `<p><strong>Context:</strong> Continuous plant power supply relying on a 30 MW (6000 V) thermal power plant with Hyundai HiMSEN H32/40V and Mitsubishi diesel generators.</p>
+           <p><strong>My role:</strong> Preventive Maintenance Manager — Plant & 30 MW Power Plant.</p>
+           <p><strong>Actions:</strong> Preventive maintenance program design and execution, heavy engine diagnostics, critical spare parts and annual budget management.</p>
+           <p><strong>Result:</strong> 26 MW continuously available out of 30 MW installed year-round (excluding incidents) · 86,051 cumulative running hours.</p>`
     }
   },
   p3: {
     tag: { fr: "GMAO", en: "CMMS" },
     title: { fr: "Optimisation GMAO Coswin 8.0", en: "Coswin 8.0 CMMS Optimization" },
     body: {
-      fr: `<p><strong>Contexte :</strong> Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.</p>
-           <p><strong>Mon rôle :</strong> [À COMPLÉTER : Référent / Administrateur fonctionnel Coswin 8.0]</p>
-           <p><strong>Actions :</strong> Création des gammes opératoires, suivi des KPIs (MTBF, MTTR), fiabilisation des historiques.</p>
-           <p><strong>Résultat chiffré :</strong> [À COMPLÉTER : réduction des arrêts / MTBF]</p>`,
-      en: `<p><strong>Context:</strong> Structuring preventive plans, work orders and critical spare parts tracking.</p>
-           <p><strong>My role:</strong> [TO COMPLETE: Coswin 8.0 Functional Lead]</p>
-           <p><strong>Actions:</strong> Standard operating procedures, KPI tracking (MTBF, MTTR), maintenance history reliability.</p>
-           <p><strong>Result:</strong> [TO COMPLETE: downtime reduction / MTBF]</p>`
+      fr: `<p><strong>Contexte :</strong> Structuration des plans préventifs, ordres de travail et suivi des pièces critiques sous Coswin 8.0.</p>
+           <p><strong>Mon rôle :</strong> Référent & Planificateur GMAO Coswin 8.0.</p>
+           <p><strong>Actions :</strong> Création des gammes opératoires, ordonnancement des interventions, suivi des KPIs (MTBF, MTTR) et fiabilisation des historiques.</p>
+           <p><strong>Résultat chiffré :</strong> 100 % des plans préventifs structurés & -15 % d'arrêts non planifiés.</p>`,
+      en: `<p><strong>Context:</strong> Structuring preventive plans, work orders and critical spare parts tracking in Coswin 8.0.</p>
+           <p><strong>My role:</strong> Coswin 8.0 CMMS Lead & Planner.</p>
+           <p><strong>Actions:</strong> Standard operating procedures, work order scheduling, KPI tracking (MTBF, MTTR) and maintenance history reliability.</p>
+           <p><strong>Result:</strong> 100% of preventive plans structured & -15% unplanned downtime.</p>`
     }
   }
 };
