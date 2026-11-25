@@ -128,7 +128,7 @@
           <span class="tag" data-i18n="p2_tag">Énergie</span>
           <h3 data-i18n="p2_t">Centrale Électrique (Hyundai & Mitsubishi)</h3>
           <p><strong data-i18n="lbl_context">Contexte :</strong> <span data-i18n="p2_ctx">Continuité énergétique d'un site industriel reposant sur des groupes diesel lourds.</span></p>
-          <p><strong data-i18n="lbl_result">Résultat :</strong> <span class="placeholder-inline" data-i18n="p2_res">[À COMPLÉTER : taux de disponibilité / heures de marche]</span></p>
+          <p><strong data-i18n="lbl_result">Résultat :</strong> <span data-i18n="p2_res">26 MW disponibles en permanence sur 30 MW installés sur l'année (hors incidents).</span></p>
           <button class="btn-link" onclick="openProjectModal('p2')" data-i18n="btn_detail">Voir le détail →</button>
         </article>
 
@@ -136,7 +136,7 @@
           <span class="tag" data-i18n="p3_tag">GMAO</span>
           <h3 data-i18n="p3_t">Optimisation GMAO Coswin 8.0</h3>
           <p><strong data-i18n="lbl_context">Contexte :</strong> <span data-i18n="p3_ctx">Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.</span></p>
-          <p><strong data-i18n="lbl_result">Résultat :</strong> <span class="placeholder-inline" data-i18n="p3_res">[À COMPLÉTER : réduction des arrêts / MTBF]</span></p>
+          <p><strong data-i18n="lbl_result">Résultat :</strong> <span data-i18n="p3_res">100 % des plans préventifs structurés & -15 % d'arrêts non planifiés.</span></p>
           <button class="btn-link" onclick="openProjectModal('p3')" data-i18n="btn_detail">Voir le détail →</button>
         </article>
       </div>
@@ -281,8 +281,9 @@
             <a href="https://github.com/Redkut" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="btn_github">Code / Démo GitHub ↗</a>
           </div>
         </div>
-        <div class="featured-app-media">
-          <div class="media-placeholder" data-i18n="app_screen_ph">[À COMPLÉTER : Capture d'écran GMAO-2026-V2]</div>
+        <div class="featured-app-media" style="display:flex; gap:0.75rem; justify-content:center;">
+          <img src="gmao-screen-1.jpg" alt="Capture d'écran GMAO-2026-V2 — Tableau de bord Planificateur" loading="lazy" style="width:48%; border-radius:12px; border:1px solid var(--border);" />
+          <img src="gmao-screen-2.jpg" alt="Capture d'écran GMAO-2026-V2 — KPIs et Audit" loading="lazy" style="width:48%; border-radius:12px; border:1px solid var(--border);" />
         </div>
       </article>
 
@@ -342,10 +343,8 @@
         <a href="cv-prince-habib-fakeye.pdf" download class="badge badge-outline" style="text-decoration:none;" data-i18n="cta_cv">📄 Télécharger mon CV (PDF)</a>
       </div>
 
-      <!-- Formulaire connecté à Web3Forms (remplacer YOUR_WEB3FORMS_ACCESS_KEY) -->
-      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
-        <input type="hidden" name="subject" value="Nouveau contact depuis le Portfolio — Prince Habib FAKEYE" />
+      <!-- Formulaire avec ouverture directe vers fakhabib@live.fr -->
+      <form id="contactForm" class="contact-form">
         <div class="form-row">
           <input type="text" name="name" id="nameInput" required placeholder="Votre nom / Entreprise" data-i18n-placeholder="ph_name" />
           <input type="email" name="email" id="emailInput" required placeholder="Votre email" data-i18n-placeholder="ph_email" />
@@ -372,8 +371,8 @@
       <h3 id="modalTitle"></h3>
       <div id="modalBody" class="modal-body"></div>
       <div class="modal-photos">
-        <div class="media-placeholder">[À COMPLÉTER : Photo Avant]</div>
-        <div class="media-placeholder">[À COMPLÉTER : Photo Pendant / Après]</div>
+        <img src="ball-mill.jpg" alt="Broyeur à boulets industriel" loading="lazy" style="width:100%; border-radius:12px; border:1px solid var(--border); object-fit:cover; max-height:220px;" />
+        <img src="power-plant.jpg" alt="Groupe électrogène industriel de centrale électrique" loading="lazy" style="width:100%; border-radius:12px; border:1px solid var(--border); object-fit:cover; max-height:220px;" />
       </div>
     </div>
   </div>

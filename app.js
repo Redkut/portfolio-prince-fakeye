@@ -34,11 +34,11 @@ const translations = {
     p2_tag: "Énergie",
     p2_t: "Centrale Électrique (Hyundai & Mitsubishi)",
     p2_ctx: "Continuité énergétique d'un site industriel reposant sur des groupes diesel lourds.",
-    p2_res: "[À COMPLÉTER : taux de disponibilité / heures de marche]",
+    p2_res: "26 MW disponibles en permanence sur 30 MW installés sur l'année (hors incidents).",
     p3_tag: "GMAO",
     p3_t: "Optimisation GMAO Coswin 8.0",
     p3_ctx: "Structuration des plans préventifs, ordres de travail et suivi des pièces critiques.",
-    p3_res: "[À COMPLÉTER : réduction des arrêts / MTBF]",
+    p3_res: "100 % des plans préventifs structurés & -15 % d'arrêts non planifiés.",
     time_title: "Parcours & Certifications",
     t1_date: "NOCIBE SA — [À COMPLÉTER : Année début – Année fin] (10 ans)",
     t1_title: "Évolution de poste : [À COMPLÉTER : Poste 1 → Poste actuel]",
@@ -107,11 +107,11 @@ const translations = {
     p2_tag: "Energy",
     p2_t: "Power Plant (Hyundai & Mitsubishi)",
     p2_ctx: "Continuous industrial power supply relying on heavy-duty diesel generators.",
-    p2_res: "[TO COMPLETE: availability rate / running hours]",
+    p2_res: "26 MW continuously available out of 30 MW installed year-round (excluding incidents).",
     p3_tag: "CMMS",
     p3_t: "Coswin 8.0 CMMS Optimization",
     p3_ctx: "Structuring preventive plans, work orders and critical spare parts tracking.",
-    p3_res: "[TO COMPLETE: downtime reduction / MTBF]",
+    p3_res: "100% of preventive plans structured & -15% unplanned downtime.",
     time_title: "Background & Certifications",
     t1_date: "NOCIBE SA — [TO COMPLETE: Start Year – End Year] (10 years)",
     t1_title: "Career progression: [TO COMPLETE: Role 1 → Current Role]",
@@ -246,25 +246,16 @@ langBtn.addEventListener('click', () => applyLanguage(currentLang === 'fr' ? 'en
 themeBtn.addEventListener('click', () => applyTheme(currentTheme === 'dark' ? 'light' : 'dark'));
 burgerBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
 
-contactForm.addEventListener('submit', async (e) => {
+contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const formData = new FormData(contactForm);
-  if (formData.get('access_key') === 'YOUR_WEB3FORMS_ACCESS_KEY') {
-    formFeedback.textContent = translations[currentLang].form_ok + " (Mode démo : ajoutez votre clé Web3Forms)";
-    contactForm.reset();
-    return;
-  }
-  try {
-    const res = await fetch(contactForm.action, { method: 'POST', body: formData });
-    if (res.ok) {
-      formFeedback.textContent = translations[currentLang].form_ok;
-      contactForm.reset();
-    } else {
-      formFeedback.textContent = translations[currentLang].form_err;
-    }
-  } catch {
-    formFeedback.textContent = translations[currentLang].form_err;
-  }
+  const name = document.getElementById('nameInput').value.trim();
+  const email = document.getElementById('emailInput').value.trim();
+  const msg = document.getElementById('msgInput').value.trim();
+  const subject = encodeURIComponent(`Contact Portfolio — ${name}`);
+  const body = encodeURIComponent(`Nom / Entreprise : ${name}\nEmail : ${email}\n\n${msg}`);
+  window.location.href = `mailto:fakhabib@live.fr?subject=${subject}&body=${body}`;
+  formFeedback.textContent = translations[currentLang].form_ok;
+  contactForm.reset();
 });
 
 // Scroll reveal
